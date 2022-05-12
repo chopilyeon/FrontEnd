@@ -1,0 +1,64 @@
+* {
+    color:green;
+}
+
+li{
+    color:pink;
+
+}
+
+/* 유일한 아이디이다 bts를 하나만 가질 수 있다 
+아이디를 지칭할때는 #을 사용한다 */
+
+#bts{
+    color:beige;
+} 
+
+/* .class명 */
+
+.red {
+    width:100px;
+    height:100px;
+    background:yellow
+}
+
+/* mouse를 갖다 대었을 때 hover */
+
+button:hover{
+    color:red;
+    background:cyan;
+}
+
+
+a[href="https://www.daum.net"]{
+    color:rgb(113,241,21);
+}
+
+/* 시작을 저렇게 하면 다 orange로 바꿔라 */
+
+a[href^="https://www.goo"]{
+    color:orange;
+}
+
+/* 맨뒤에 googledaum.net이 있는가*/
+
+a[href$="googledaum.net"]{
+    color:crimson;
+}
+
+
+
+
+
+
+
+
+
+
+/*  *표시는 모든 테그에 적용되는 것을 셋팅 하는 것임 */
+
+/* class는 유일하지 않음 ID는 유일함  */
+
+/* $의 의미는 뭔가?  */
+
+
