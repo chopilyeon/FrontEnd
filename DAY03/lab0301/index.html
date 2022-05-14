@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Page Making</title>
+    <!-- 14. style 파일을 따로 저장해서 import하기
+        1)style / style
+        2)link rel="stylesheet" href="경로+style.css"
+    -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 밑에 링크가 있어야지 밑에 i 사용 가능함 -->
+    <script src="https://kit.fontawesome.com/40af199107.js" crossorigin="anonymous"></script>
+    <script src="poly.js" defer></script>
+
+</head>
+<body> 
+    <nav class="navibar">
+        <div class="navbar_logo">
+            <!-- 아이콘 갖다 쓸때 쓰는 테그임 -->
+            <i class="fa-brands fa-uncharted"></i>
+            <a href="#">DataAnalysis</a>
+        </div>
+        <ul class="navbar_menu">
+            <li>
+                <a href="">Home</a></li>
+            <li>
+                <a href="">Photo</a>
+            </li>
+            <li>
+                <a href="">Schedule</a>
+            </li>
+            <li>
+                <a href="">FAQ</a>
+            </li>
+            <li>
+                <a href="">Booking</a>
+            </li>
+        </ul>
+        <ul class="navbar_icons">
+            <li>
+                <i class="fa-brands fa-facebook-square"></i>
+                Meta icon</li>
+                <i class="fa-brands fa-twitter"></i>
+            <li>
+                <i class="fa-brands fa-twitter"></i>
+                twitter icon
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+            <i class="fa-brands fa-twitter"></i>
+        </ul>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <a href="#" class="navbar_togleBtn">
+            <!-- # 넣으면 클릭해도 안넘어감  -->
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i>togle button</i> -->
+        </a>
+    </nav>
+
+<!-- javascript는 body 끝날때 맨 마지막 위에다 쓰는것이 성능면에서 좋음  
+하지만 defer 위에다 정의해주면 마지막에 
+-->
+
+</body>
+</html>
