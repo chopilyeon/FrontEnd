@@ -1,0 +1,127 @@
+/* 
+1.필요 없다고생각되는 속성들을 초기화
+*/
+
+html,body{
+    margin:0;
+    padding:0;
+    
+}
+
+
+
+/* h태그와 p태그는 기본적으로
+위아래 margin을 가지고 있다 
+margin을 초기화 시켜준다  */
+h1,p{
+    margin:0;
+}
+
+/* 
+배경을 추가해준다
+배경이 반복되는 것을 없애기 위해 no repeat
+vm,vh와 %의 차이점
+vm,vH 가로세로의 지금 가지고 있는 크기의 최대치
+%를 했을 경우에는 마진,... 다 빼고 100%가 되기 때문에
+정확하게 전체를 다 사용할 경우에는 vw,vh를 사용하면 된다.
+ */
+#main{
+    background:url(KakaoTalk_Photo_2022-05-16-10-40-27.jpeg) no-repeat ;
+    background-size:cover; 
+    /* cover가 사이즈가 깨지지 않고  */
+    background-position:center center;
+    /*  */
+    width:100vw;
+    height:100vh;
+    /* 구글폰트 Questrial */
+    font-family:'Questrial,sans-serif;'
+}
+
+
+/* 
+4. 컨텐츠의 텍스트의 색상을 흰색으로 
+ */
+
+ #contents{
+     color:white;
+     position:absolute;
+     width:100%;
+     /* 이렇게만 주게 되면 시작 지정이 50%
+     이고,요소(엘리먼트)가 50% 지점이 오는 것이 
+     아니다.
+      */
+     top:50%;
+     /* 요소 자체가 중앙에 오기 위해서 */
+    transform:translateY(-50%);
+    /* 텍스트를 중앙에 위치시킨다  */
+    text-align:center; 
+}
+ /* a 태그는 기본적으로 색깔이 정의되서 없애줘야함  */
+
+ /* 
+ 5. a태그의 속성을 정의해준다.
+ */
+ a{
+    /* 부모로부터 상속된 값을 적용받아라 */
+    color:inherit;
+    /* 링크 표시를 없애준다. */
+    text-decoration:none;
+    
+ }
+
+ /* 
+ 6.구글 폰트 사용 
+ */
+ 
+ #contents h1{
+     font-family:'Dancing Script', cursive;
+     font-size:70px;
+     margin-bottom:16px;
+ }
+
+ #contents p{
+     font-size:23px;
+     /* 
+     a태그와 p태그 간의 간격을 떨어뜨리기 위해서 
+     padding을 적용한다 */
+    margin-bottom:16px;
+}
+
+#contents a{
+    display:inline-block;
+    border:2px solid white;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:17px;
+    font-weight:bold;
+    transition:all 5s;
+    /* 마우스를 올릴때 0.5초 동안의 애니메이션 효과적용  */
+}
+
+ /*
+ a 태그를 버튼처럼 만들어본다. 
+  */
+
+  /* 
+   마우스가 올라가면 색상이 변하도록 하자
+  */
+  #contents a:hover{
+      background-color:gray;
+  }
+
+  /* 
+  미디어 쿼리를 적용해보자.
+  */
+
+  @media(max-width:770px) {
+    #contents h1{
+        font-size:50px;
+    }
+    #contents p{
+        font-size:20px;
+    }
+    contents a{
+        font-size:12px;
+    }
+      
+  }
