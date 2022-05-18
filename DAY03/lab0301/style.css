@@ -37,12 +37,9 @@
 body{
     margin: 0;
 }
-
-
 /*
 a 테그에 텍스트 밑줄과 색상이 있는데 
 text-decoration으로 없애 주자
-
  */
  a{
      text-decoration:None;
@@ -57,7 +54,6 @@ text-decoration으로 없애 주자
  /* 
  로고 색상을 입혀본다. 
  */
-
  .navbar_logo{
      color:#d49466;
  }
@@ -91,7 +87,7 @@ text-decoration으로 없애 주자
 */
 
 .navbar_menu li{
-    padding:8px 12px;
+    padding:5px 15px;
 
 }
 
@@ -146,7 +142,8 @@ link icon의 스타일을 지정한다
 position:absolute;
 /* 오른쪽의 적당한 위치에 위치하도록 해준다 */
 right:40px;
-font-size:24px;
+font-size:24px; 
+/* 이게 아이콘 키우는 거임  */
 color:#d49466;
 
 /* 햄버거 빵이 기본으로 안보이도록 해준다 */

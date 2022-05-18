@@ -26,7 +26,7 @@ vm,vH 가로세로의 지금 가지고 있는 크기의 최대치
 정확하게 전체를 다 사용할 경우에는 vw,vh를 사용하면 된다.
  */
 #main{
-    background:url(KakaoTalk_Photo_2022-05-16-10-40-27.jpeg) no-repeat ;
+    background:url(chicago-1791002_1920.jpg) no-repeat ;
     background-size:cover; 
     /* cover가 사이즈가 깨지지 않고  */
     background-position:center center;
