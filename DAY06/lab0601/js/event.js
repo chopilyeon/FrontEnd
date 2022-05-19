@@ -1,17 +1,36 @@
+
+// 이벤트 처리 순서 
+// 1) 객체를 찾고(element, object)
+// 2) 이벤트를 생성하고
+// 3) 객체에 붙인다.(AddEventListener)
+
+// 이벤트 처리 방법 
+// 1) 이벤트 처리기를 등록하는 방법 
+// <input type="button" onclick="changeColor()"/>
+
+// 2) DOM 요소 객체의 이벤트 처리기 프로퍼티에 설정
+// const btn1 = document.getElementById("btn"); // id 
+// const btn2 = document.querySelector("#btn"); // id 
+// const btn3 = document.querySelector(".colorBox"); // class 
+// btn.onclick = changeColor();
+
+
+
+
 // 3) addEventListener 메소드를 사용하는 방법
 // const btn1 = document.getElemnetById("btn");//id
 // const btn2 = document.querySelector("#btn");//id
 // const btn3 = document.querySelector(".colorBox");//class
-// btn1.addEventListener("click",()=>{
+// btn1.addEventListener("click",()=>{ 
 
 //     do something
 // });
     
 
-
+//dom이 실행되면 listner를 꽂아라! 
 document.addEventListener("DOMContentLoaded",()=>{
     alert("잘 들어오나?")
-    
+    //여기서 말하는 객체 element임 
     const boxEle = document.querySelector("#box");
     const colorBtnEle = document.querySelector(".colorBtn");
     const BtnEle = document.querySelector("button");
@@ -23,6 +42,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     // boxEle.addEventListener("click",(e)=>{ // click이 일어났을 떄 
     //     e.currentTarget.style.backgroundColor="red";
     // });
+    //e 라는 argument로 빨려들어감. 
+    //
     boxEle.addEventListener("click",function(e){ // click이 일어났을 떄 
         e.currentTarget.style.backgroundColor="red";
     });
@@ -111,6 +132,18 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 // //함수 호출하는 방법 추가
 // //obj.m(); , 이 객체의 m프로퍼티 메소드라고 함.  
+
+
+
+
+
+
+
+
+
+
+
+
 // let obj = {};
 // obj.m=function(){
 //     console.log("함수추가하기");

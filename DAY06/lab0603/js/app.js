@@ -28,6 +28,7 @@ simpleFunc();
 const simpleFunc2 = () => console.log("simple2");
 simpleFunc2();
 
+//아규먼트가 있는 화살표 함수
 const add = (a,b) => a+b;
 console.log(add(1,2));
 const add1=function(a,b){
