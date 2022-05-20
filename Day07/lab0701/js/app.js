@@ -1,5 +1,4 @@
-document.querySelector("div")
-        .addEventListener("click",function({target}){
+document.querySelector("div").addEventListener("click",function({target}){
         console.log(target.tagName); //태그 이름을 끌고 오게됨 <div>
         console.log(target.innerText); //innerText 
     });
@@ -10,20 +9,20 @@ document.querySelector("div")
 
     //console.log(target.tagName);
 
-document.querySelector("div")
-        .addEventListener("click",function({type}){
+document.querySelector("div").addEventListener("click",function({type}){
         console.log(type);
     });
 /**
  * 타입을 확인해보고 싶으면 type이라는 이름을 주고 출력해야한다
- * (event type);
+ * (event type);이었던 것 
+ * 앞에서 click자체를 event 의 e로 받은 것 
+ * type은 
  * 
  * 
  */
 
- document.querySelector("div")
- .addEventListener("click",function({type,target}){
- console.log(type,target.tagName); //innerText
- 
-console.log("eval=",eval(1+2));// eval은 계산해주는 함수임 
+ document.querySelector("div").addEventListener("click",function({type,target}){
+    console.log(type,target.tagName); //innerText
+    console.log("eval=",eval(1+2));// eval은 계산해주는 함수임 
+    console.log("eval=",eval('alert("하이")'));
 });
