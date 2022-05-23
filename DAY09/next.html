@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 테스트 페이지2</title>
+</head>
+<body>
+    <p>iframe 페이지입니다.</p>
+    <div id="display"></div>
+    <script>
+        //보여질 위치의 엘리먼트를 가져온다. 
+        window.onload=function(){
+            const result = document.getElementById("display");
+            window.addEventListener("message",function(e){
+                let sourceOrigin = location.origin;
+                if(e.origin !== sourceOrigin) return;
+            });
+        };
+    </script>
+</body>
+</html>

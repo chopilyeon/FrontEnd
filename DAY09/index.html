@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 테스트</title>
+</head>
+<body>
+    <p>
+        <input type="text" id="message" size="60">
+        <button id="button">보내기</button>
+    </p>
+    <!-- 다른 페이지가 이 페이지에서 동작하게 만듦 -->
+    <iframe src="next.html" width="300px" height="200px" frameborder="0" id="iframe">
+
+    </iframe>
+    <script>
+        // 데이터를 보낼 페이지 - iframe
+        const frameWindow=document.getElementById("iframe");
+        // 메세지 입력을 위해 전송 버튼의 요소를 가져옴
+        const message = document.getElementById("message");
+        const button = document.getElementById("button");
+        // 메세지를 보내는 사이트의 출처
+        let targetOrigin = "/";
+    message.addEventListener("keydown", function(){
+        frameWindow.postMessage(message.value,targetOrigin);
+    }); 
+
+    </script>
+</body>
+</html>
